@@ -23,8 +23,6 @@ const Modal = () => {
   const employeeSigDate = useSelector((state: RootState) => state.modal.employeeSigDate)
   const employeeSignatureName = useSelector((state: RootState) => state.modal.employeeSignatureName)
 
-  console.log(companySigDate)
-
   const handleAction = async () => {
     setLoading(true);
 
@@ -46,7 +44,6 @@ const Modal = () => {
       else {
         const response = await createNote(token, obj).then(res => res.data)
         if(response.data){
-          console.log("Created")
           dispatch(setModalStatus(''))
           dispatch(clearAllFields())
         }

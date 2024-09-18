@@ -13,8 +13,6 @@ const Table = (props: any) => {
 
   const rows = [...props.data]
 
-  console.log(props.data)
-
   return(
     <div className={styles.table}>
       <DataGrid 

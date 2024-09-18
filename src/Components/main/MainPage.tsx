@@ -26,8 +26,6 @@ const MainPage = () => {
     refreshTableData()
   }, [token, refresh, modalStatus])
 
-  console.log(refresh)
-
   return(
     <div className={styles.main}>
       <div className={styles.controls}>

@@ -8,8 +8,6 @@ import { useSelector } from 'react-redux'
 function App() {
   const status = useSelector((state: RootState) => state.login.status)
   const modalStatus = useSelector((state: RootState) => state.modal.modalStatus)
-
-  console.log(modalStatus)
   
   return (
     <>

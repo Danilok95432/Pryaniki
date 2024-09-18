@@ -56,7 +56,6 @@ const ModalEdit = (props: any) => {
         else {
         const response = await editNote(token, selectedRow, obj).then(res => res.data)
         if(response.data){
-          console.log("Edited")
           dispatch(setModalStatus(''))
           dispatch(clearAllFields())
         }
