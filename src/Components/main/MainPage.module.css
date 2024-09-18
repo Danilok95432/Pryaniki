@@ -1,0 +1,45 @@
+.main {
+    width: 100%;
+}
+
+.controls {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 24px;
+}
+
+.control {
+    width: 20%;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s ease-in;
+}
+
+.control:hover {
+    background: #c8ff48;
+    color: #000;
+    border-radius: 0px;
+}
+
+.disable {
+    width: 20%;
+    pointer-events: none;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #737373;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s ease-in;
+}
